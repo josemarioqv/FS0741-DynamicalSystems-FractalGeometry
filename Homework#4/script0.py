@@ -29,9 +29,10 @@ for c in params:
     x = 0
     print(iter, c)
     iter += 1
-    for iteration in range(500):
+    total = 1000
+    for iteration in range(total):
         x = f(x, c)
-        if(iteration-1000 < 10):
+        if(abs(iteration-total) < 10):
             cs.append(c)
             xs.append(x)
 plt.plot(cs, xs, 'ob')

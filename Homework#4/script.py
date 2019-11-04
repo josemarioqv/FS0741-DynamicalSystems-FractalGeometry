@@ -8,12 +8,12 @@ def f(x, c):
 
 
 # seeds definitions
-params = np.arange(-0.75, 0.25, 1/5)
-params = np.concatenate((params, np.arange(-1.25, -0.75, 0.5/5)))
-params = np.concatenate((params, np.arange(-1.4, -1.25, 0.15/20)))
-params = np.concatenate((params, np.arange(-1.75, -1.4, 0.36/5)))
-params = np.concatenate((params, np.arange(-1.78, -1.76, 0.021/10)))
-params = np.concatenate((params, np.arange(-2, -1.78, 0.22/5)))
+params = np.arange(-0.75, 0.25, 1/200)
+params = np.concatenate((params, np.arange(-1.25, -0.75, 0.5/200)))
+params = np.concatenate((params, np.arange(-1.4, -1.25, 0.15/200)))
+params = np.concatenate((params, np.arange(-1.75, -1.4, 0.36/200)))
+params = np.concatenate((params, np.arange(-1.78, -1.76, 0.021/200)))
+params = np.concatenate((params, np.arange(-2, -1.78, 0.22/200)))
 
 points = []
 
@@ -29,9 +29,10 @@ for c in params:
     x = 0
     print(iter, c)
     iter += 1
-    for iteration in range(50):
+    total = 1000
+    for iteration in range(total):
         x = f(x, c)
-        if(iteration-1000 < 10):
+        if(abs(iteration-total) < 10):
             cs.append(c)
             xs.append(x)
 plt.plot(cs, xs, 'ob')
