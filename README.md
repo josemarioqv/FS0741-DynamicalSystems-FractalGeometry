@@ -4,7 +4,7 @@ This course is mainly based on the book "A First Course In Chaotic Dynamical Sys
 
 ## Contents
 - Homework #1: Cos(x) orbit calculation.
-- Homework #2: More orbits. Experiment "Computers lies",
+- Homework #2: More orbits. Experiment "Computers lies".
 - Homework #3: Rates of convergence.
 - Homework #4: Bifurcation Diagram.
 - Homework #5: Feigenbaum constant.
