@@ -3,13 +3,12 @@ import random
 import pyglet
 
 
-# Helechos
-class Helecho():
+class Tree():
 
     def __init__(self):
         self.W = np.array([[[0., 0.], [0., 0.5]],
-                          [[0.42, -0.42], [0.42, 0.42]],
-                          [[0.42, 0.42], [-0.42, 0.42]]])
+                          [[0.40, -0.40], [0.40, 0.60]],
+                          [[0.42, 0.40], [-0.40, 0.60]]])
         self.B = np.array([[0., 0.],
                           [0., 0.2],
                           [0., 0.2]])
@@ -21,7 +20,7 @@ class Helecho():
         self.X = np.dot(self.W[i], self.X) + self.B[i]
 
     def draw(self):
-        point = self.X*800
+        point = self.X*400
         point = tuple(point.astype(int))
         print(point)
         pyglet.graphics.draw(1, pyglet.gl.GL_POINTS, ('v2i', point),
@@ -36,13 +35,13 @@ class Window(pyglet.window.Window):
         self.set_size(400, 400)
         pyglet.clock.schedule_interval(self.update, 0.001)
         # initialization
-        self.helechito = Helecho()
+        self.tree = Tree()
 
     def on_draw(self):
-        self.helechito.draw()
+        self.tree.draw()
 
     def update(self, dt):
-        self.helechito.update()
+        self.tree.update()
         pass
 
 

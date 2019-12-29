@@ -3,8 +3,7 @@ import random
 import pyglet
 
 
-# Helechos
-class Helecho():
+class Fern():
 
     def __init__(self):
         self.W = np.array([[[0., 0.], [0., 0.4]],
@@ -38,13 +37,13 @@ class Window(pyglet.window.Window):
         self.set_size(400, 400)
         pyglet.clock.schedule_interval(self.update, 0.001)
         # initialization
-        self.helechito = Helecho()
+        self.fern = Fern()
 
     def on_draw(self):
-        self.helechito.draw()
+        self.fern.draw()
 
     def update(self, dt):
-        self.helechito.update()
+        self.fern.update()
         pass
 
 
