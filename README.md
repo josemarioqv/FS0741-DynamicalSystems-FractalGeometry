@@ -8,7 +8,9 @@ This course is mainly based on the book "A First Course In Chaotic Dynamical Sys
 - Homework #3: Rates of convergence.
 - Homework #4: Bifurcation Diagram.
 - Homework #5: Feigenbaum constant.
-- Midterm: Analysis for x³+cx
+- First Exam: Analysis for x³+cx
+- Second Exam: Ploting some Fractals ( Sierpinski Triangle, Tree, Fern )
+- Final Exam: Plot of Julia set
 
 ## Installation of Dependencies
 
