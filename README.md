@@ -12,19 +12,6 @@ This course is mainly based on the book "A First Course In Chaotic Dynamical Sys
 - Second Exam: Ploting some Fractals ( Sierpinski Triangle, Tree, Fern )
 - Final Exam: Plot of Julia set
 
-## Installation of Dependencies
-
-If you have conda installed just run
-
-```
-conda activate
-```
-
-or you could try
-
-```
-pip install -r requirements.txt
-```
 
 
 ## License
